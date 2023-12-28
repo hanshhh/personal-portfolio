@@ -2,6 +2,8 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 import Modal from "./Modal";
 import Image from "next/image";
 
@@ -47,12 +49,21 @@ const Navbar = () => {
                     
                 </li>
             </ul>
-            <img
+            <div className="flex justify-end">
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <FaGithub size={24}/>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <FaLinkedin size={24}/>
+            </a>
+
+            </div>
+            {/* <img
                 id="moon"
                 src="./img/moon.png"
                 class="hidden md:block w-5 cursor-pointer"
                 alt=""
-            />
+            /> */}
             {/* <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
                 <div class="w-6 h-0.5 bg-black"></div>
                 <div class="w-6 h-0.5 bg-black"></div>
