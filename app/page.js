@@ -1,4 +1,7 @@
 import Image from 'next/image'
+import Accordion from '@/components/Accordion'
+import courses from '@/data/courses'
+
 
 export default function Home() {
   return (
@@ -29,6 +32,21 @@ export default function Home() {
           >Contact Me</a>
       </div>
     </div>
+    <section id="education" className="relative min-h-screen flex flex-col justify-center bg-gradient-to-t from-indigo-200 overflow-hidden dark:from-slate-800 dark:to-slate-900">
+      <div className="w-full max-w-2xl mx-auto px-4 md:px-6 py-24">
+
+        <h1 className="text-2xl font-bold text-white mb-4">Courses</h1>
+
+        <div className="divide-y divide-slate-200">
+          {courses.map((course, index) => (
+            <Accordion key={index} title={course.title} id={`faqs-${index}`} active={false}>
+              {course.text}
+            </Accordion>
+          ))}
+        </div>
+
+      </div>
+    </section>
   
     
 

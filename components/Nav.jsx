@@ -34,7 +34,7 @@ const Navbar = () => {
                 <Link href="/dj">Experience</Link>
                 </li>
                 <li class="hover:text-gray-500">
-                <a href="#">Education</a>
+                <a href="#education">Education</a>
                 </li>
                 <li class="hover:text-gray-500">
                 <a href="#">Contact</a>
