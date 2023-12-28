@@ -2,10 +2,15 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Modal from "./Modal";
 import Image from "next/image";
 
 const Navbar = () => {
+    const [open, setOpen] = useState(false)
     const [showSide, setShowSide] = useState(false);
+    const openModal = () => {
+        setOpen(true)
+    }
 
     // https://www.linkedin.com/pulse/implement-dark-mode-tailwindcss-nextjs13-app-5-simple-lucas-los-arcos/
     // Todo: later add mode toggle based on the tut
@@ -17,9 +22,9 @@ const Navbar = () => {
         <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900 px-8">
             <div class="container mx-auto py-5 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <Image class="w-8" src="/logo.png" alt="" width={40} height={40}/>
+                {/* <Image class="w-8" src="/logo.png" alt="" width={40} height={40}/> */}
                 <span class="text-2xl font-bold text-indigo-900 dark:text-white"
-                >Wenqi</span>
+                >Wenqi Zhan</span>
             </div>
             <ul
                 class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
@@ -36,8 +41,9 @@ const Navbar = () => {
                 <li class="hover:text-gray-500">
                 <a href="#education">Education</a>
                 </li>
-                <li class="hover:text-gray-500">
-                <a href="#">Contact</a>
+                <li class="hover:text-gray-500 cursor-pointer">
+                    <p onClick={openModal}>Contact</p>
+                    
                 </li>
             </ul>
             <img
@@ -77,6 +83,7 @@ const Navbar = () => {
                 </li> */}
             </ul>
             </div>
+            <Modal open={open} setOpen={setOpen}/>
         </nav>
     );
 };
