@@ -7,6 +7,10 @@ import Image from "next/image";
 const Navbar = () => {
     const [showSide, setShowSide] = useState(false);
 
+    // https://www.linkedin.com/pulse/implement-dark-mode-tailwindcss-nextjs13-app-5-simple-lucas-los-arcos/
+    // Todo: later add mode toggle based on the tut
+
+
 
 
     return (
