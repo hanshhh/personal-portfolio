@@ -33,14 +33,15 @@ const Navbar = () => {
                 <Link href="/">About me</Link>
                 </li>
                 <li class="hover:text-gray-500">
+                <Link href="#education">Education</Link>
+                </li>
+                <li class="hover:text-gray-500">
                 <Link href="#">Skills</Link>
                 </li>
                 <li class="hover:text-gray-500">
                 <Link href="/dj">Experience</Link>
                 </li>
-                <li class="hover:text-gray-500">
-                <a href="#education">Education</a>
-                </li>
+                
                 <li class="hover:text-gray-500 cursor-pointer">
                     <p onClick={openModal}>Contact</p>
                     
@@ -69,18 +70,19 @@ const Navbar = () => {
                 <li>
                 <a id="hLink" href="#">About me</a>
                 </li>
-                {/* <li> */}
-                {/* <a id="hLink" href="#about">Skills</a>
+                <li>
+                <a id="hLink" href="#">Education</a>
                 </li>
                 <li>
-                <a id="hLink" href="#services">Experience</a>
+                <a id="hLink" href="#">Skills</a>
                 </li>
                 <li>
-                <a id="hLink" href="#works">Education</a>
+                <a id="hLink" href="#">Experience</a>
                 </li>
+
                 <li>
-                <a id="hLink" href="#contact">Contact</a>
-                </li> */}
+                <p onClick={openModal}>Contact</p>
+                </li>
             </ul>
             </div>
             <Modal open={open} setOpen={setOpen}/>

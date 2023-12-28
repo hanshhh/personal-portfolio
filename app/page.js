@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Accordion from '@/components/Accordion'
 import courses from '@/data/courses'
 import Modal from '@/components/Modal';
+import SkillGroup from '@/components/SkillGroup';
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -12,7 +14,7 @@ export default function Home() {
     </div>
 
     <div
-      class="h-1/2 bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative mt-11 pt-8 px-2 mx-auto"
+      class="h-1/2 bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative mt-11 pt-8 pb-6 px-2 mx-auto"
     >
 
 
@@ -33,6 +35,22 @@ export default function Home() {
           >Contact Me</a>
       </div>
     </div>
+    <div class="py-16 bg-white dark:bg-slate-900">  
+      <div class="container m-auto px-6 text-gray-600 dark:text-white md:px-12 xl:px-6">
+          <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+            <div class="md:5/12 lg:w-5/12">
+              <img class="h-auto max-w-full rounded-lg" src="education.png" alt="image" loading="lazy" width="" height=""/>
+            </div>
+            <div class="md:7/12 lg:w-6/12">
+              <h2 class="text-2xl text-gray-900 dark:text-white font-bold md:text-4xl">CS Specialist Program</h2>
+              <p class="mt-6 text-gray-200">I am currently pursuing a Computer Science Specialist program as part of a Bachelor Of Science degree along with a minor in Mathematics & STATs in UofT, St. George Campus. Expected to graduate in summer 2025. My current GPA: 3.92/4.0.</p>
+              <p class="mt-4 text-gray-200">I actively participated in the Recognized Study Group Leadership Program, where I led a group of 4-8 CS/Math students to facilitate learning. </p>
+              
+            </div>
+          </div>
+      </div>
+    </div>
+    <SkillGroup></SkillGroup>
     <section id="education" className="relative min-h-screen flex flex-col justify-center bg-gradient-to-t from-indigo-200 overflow-hidden dark:from-slate-800 dark:to-slate-900">
       <div className="w-full max-w-2xl mx-auto px-4 md:px-6 py-24">
 
@@ -48,27 +66,18 @@ export default function Home() {
 
       </div>
     </section>
-    <div class="py-16 bg-white dark:bg-slate-900">  
-      <div class="container m-auto px-6 text-gray-600 dark:text-white md:px-12 xl:px-6">
-          <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-            <div class="md:5/12 lg:w-5/12">
-              <img class="h-auto max-w-full rounded-lg" src="education.png" alt="image" loading="lazy" width="" height=""/>
-            </div>
-            <div class="md:7/12 lg:w-6/12">
-              <h2 class="text-2xl text-gray-900 dark:text-white font-bold md:text-4xl">Section Name</h2>
-              <p class="mt-6 text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
-              <p class="mt-4 text-gray-600"> Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
-            </div>
-          </div>
-      </div>
-    </div>
+    
     <div class="py-16 bg-white dark:bg-slate-800">  
       <div class="container m-auto px-6 text-gray-600 dark:text-white md:px-12 xl:px-6">
           <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
           <div class="md:7/12 lg:w-6/12">
-              <h2 class="text-2xl text-gray-900 dark:text-white font-bold md:text-4xl">Section Name</h2>
-              <p class="mt-6 text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
-              <p class="mt-4 text-gray-600"> Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+          <div className="divide-y divide-slate-200">
+          {courses.map((course, index) => (
+            <Accordion key={index} title={course.title} id={`faqs-${index}`} active={false}>
+              {course.text}
+            </Accordion>
+          ))}
+        </div>
             </div>
             <div class="md:5/12 lg:w-5/12">
               <img class="h-auto max-w-full rounded-lg" src="education.png" alt="image" loading="lazy" width="" height=""/>
