@@ -1,6 +1,6 @@
 function ContactForm() {
     return (
-        <section className="py-6 dark:bg-slate-900 dark:text-gray-50" id="contact">
+        <section className="py-6 bg-slate-900 text-gray-50" id="contact">
             <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
                 <div className="py-6 md:py-0 md:px-6">
                     <h1 className="text-4xl font-bold pt-4 pb-4">Contact</h1>
@@ -31,15 +31,15 @@ function ContactForm() {
                 <form novalidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
                     <label className="block">
                         <span className="mb-1">Full name</span>
-                        <input type="text" placeholder="Name" className="block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri dark:bg-gray-800" />
+                        <input type="text" placeholder="Name" className="block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri bg-gray-800" />
                     </label>
                     <label className="block">
                         <span className="mb-1">Email address</span>
-                        <input type="email" placeholder="Email.." className="block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri dark:bg-gray-800" />
+                        <input type="email" placeholder="Email.." className="block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri bg-gray-800" />
                     </label>
                     <label className="block">
                         <span className="mb-1">Message</span>
-                        <textarea rows="5" className="block w-full rounded-md focus:ring focus:ri focus:ri dark:bg-gray-800"></textarea>
+                        <textarea rows="5" className="block w-full rounded-md focus:ring focus:ri focus:ri bg-gray-800"></textarea>
                     </label>
                     <button type="button" className="btn-grad grad-rev">Submit</button>
                 </form>

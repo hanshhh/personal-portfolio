@@ -25,10 +25,10 @@ const projects = [
   
   export default function ProjectSection() {
     return (
-      <div className=" dark:bg-slate-900" id="experience">
+      <div className=" bg-slate-900" id="experience">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-            <h2 className="text-4xl font-bold dark:text-indigo-600 mb-10">Projects</h2>
+            <h2 className="text-4xl font-bold text-indigo-600 mb-10">Projects</h2>
   
             <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
               {projects.map((project) => (
@@ -40,13 +40,13 @@ const projects = [
                       className="h-full w-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="mt-6 text-sm dark:text-gray-400 underline">
+                  <h3 className="mt-6 text-sm text-gray-400 underline">
                     <a href={project.href} target="_blank" rel="noopener noreferrer">
                       <span className="absolute inset-0" />
                       {project.name}
                     </a>
                   </h3>
-                  <p className="text-base dark:text-white">{project.description}</p>
+                  <p className="text-base text-white">{project.description}</p>
                 </div>
               ))}
             </div>

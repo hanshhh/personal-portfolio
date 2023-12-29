@@ -23,7 +23,7 @@ const Navbar = () => {
 
 
     return (
-        <nav class="w-full fixed top-0 z-10bg-slate-900 px-8">
+        <nav class="w-full fixed top-0 z-10 bg-slate-900 px-8">
             <div class="container mx-auto py-5 flex items-center justify-between">
             <div class="flex items-center gap-2">
                 {/* <Image class="w-8" src="/logo.png" alt="" width={40} height={40}/> */}

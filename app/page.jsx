@@ -16,13 +16,13 @@ export default function Home() {
     </div>
 
     <div
-      class="h-1/2 bg-gradient-to-t dark:from-slate-800 dark:to-slate-900 relative mt-11 pt-8 pb-6 px-2 mx-auto"
+      class="h-1/2 bg-gradient-to-t from-slate-800 to-slate-900 relative pt-8 pb-6 px-2 mx-auto"
     >
-      <div class="container m-auto px-6 text-gray-600 dark:text-white md:px-12 xl:px-6">
+      <div class="container m-auto px-6 text-white md:px-12 xl:px-6">
           <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
 
             <div class="md:7/12 lg:w-7/12">
-              <h2 class="text-2xl dark:text-white font-bold md:text-4xl">About Me</h2>
+              <h2 class="text-2xl text-white font-bold md:text-4xl">About Me</h2>
               <p class="mt-6 text-gray-200 tracking-wider">😁Hello there! My name is Wenqi Zhan, and I'm currently pursuing a degree in Computer Science 💻 at the University of Toronto. 
           My academic journey and personal interests have led me to develop a keen passion for 🎆full-stack application development🎆. 
           I'm particularly fascinated by the intricate process of creating 💡innovative and 🔥interactive websites that captivate audiences.</p>
@@ -64,14 +64,14 @@ export default function Home() {
         
       </div> */}
     </div>
-    <div class="py-16 dark:bg-slate-900" id="education">  
-      <div class="container m-auto px-6 dark:text-white md:px-12 xl:px-6">
+    <div class="py-16 bg-slate-900" id="education">  
+      <div class="container m-auto px-6 text-white md:px-12 xl:px-6">
           <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
             <div class="md:5/12 lg:w-5/12">
               <img class="h-auto max-w-full rounded-lg" src="education.png" alt="image" loading="lazy" width="" height=""/>
             </div>
             <div class="md:7/12 lg:w-6/12">
-              <h2 class="text-2xl dark:text-white font-bold md:text-4xl">CS Specialist Program</h2>
+              <h2 class="text-2xl text-white font-bold md:text-4xl">CS Specialist Program</h2>
               <p class="mt-6 text-gray-200">I am currently pursuing a Computer Science Specialist program as part of a Bachelor Of Science degree along with a minor in Mathematics & STATs in UofT, St. George Campus. Expected to graduate in summer 2025. My current GPA: 3.92/4.0.</p>
               <p class="mt-4 text-gray-200 pb-2">I actively participated in the Recognized Study Group Leadership Program, where I led a group of 4-8 CS/Math students to facilitate learning. </p>
               <Link href="/education" className='btn-grad w-[300px]'>Courses & Transcript</Link>
@@ -82,13 +82,13 @@ export default function Home() {
     <SkillGroup></SkillGroup>
     <ProjectSection></ProjectSection>
     <div
-      class="h-1/2 bg-gradient-to-t dark:from-slate-800 dark:to-slate-900 relative pt-3 pb-12 px-2 mx-auto "
+      class="h-1/2 bg-gradient-to-t from-slate-800 to-slate-900 relative pt-3 pb-12 px-2 mx-auto "
     >
-      <div class="container m-auto px-6 dark:text-white md:px-12 xl:px-6 w-full md:w-9/12 ">
+      <div class="container m-auto px-6 text-white md:px-12 xl:px-6 w-full md:w-9/12 ">
           <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
 
             <div class="md:7/12 lg:w-7/12">
-              <h2 class="text-2xl dark:text-indigo-600 font-bold md:text-4xl">Software Engineer Internship</h2>
+              <h2 class="text-2xl text-indigo-600 font-bold md:text-4xl">Software Engineer Internship</h2>
               <p class="mt-6 text-gray-200 tracking-wider"> 
               SEEDA is an Alberta-based company whose goal is to help companies plan and execute capital projects. 
               They provide engineering and techanical services, and offer project planning, management, and support.

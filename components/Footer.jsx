@@ -5,7 +5,7 @@ import { FaDiscord } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 function Footer() {
     return (
-        <section class="dark:bg-slate-900">
+        <section class="bg-slate-900">
     <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <nav class="flex flex-wrap justify-center -mx-5 -my-2">
             <div class="px-5 py-2">

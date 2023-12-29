@@ -43,22 +43,22 @@ export default function Modal({open, setOpen}) {
                       </Dialog.Title>
                       <form class="mt-5 px-8 flex flex-col gap-5 items-center w-full">
                         <input
-                            class="p-2 w-full   rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                            class="p-2 w-full   rounded-sm bg-slate-800 ring-0 text-white"
                             type="text"
                             placeholder="Name"
                         />
                         <input
-                            class="p-2 w-full   rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                            class="p-2 w-full   rounded-sm bg-slate-800 ring-0 text-white"
                             type="text"
                             placeholder="phone"
                         />
                         <input
-                            class="p-2 w-full   rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                            class="p-2 w-full   rounded-sm bg-slate-800 ring-0 text-white"
                             type="email"
                             placeholder="Email"
                         />
                         <textarea
-                            class="p-2 w-full   rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                            class="p-2 w-full   rounded-sm bg-slate-800 ring-0 text-white"
                             cols="45"
                             rows="10"
                             placeholder="Message..."
