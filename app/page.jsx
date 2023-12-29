@@ -4,6 +4,7 @@ import courses from '@/data/courses'
 import Modal from '@/components/Modal';
 import SkillGroup from '@/components/SkillGroup';
 import Link from 'next/link';
+import ProjectSection from '@/components/Projects';
 
 
 export default function Home() {
@@ -78,6 +79,7 @@ export default function Home() {
       </div>
     </div>
     <SkillGroup></SkillGroup>
+    <ProjectSection></ProjectSection>
     <section id="education" className="relative min-h-screen flex flex-col justify-center bg-gradient-to-t from-indigo-200 overflow-hidden dark:from-slate-800 dark:to-slate-900">
       <div className="w-full max-w-2xl mx-auto px-4 md:px-6 py-24">
 
