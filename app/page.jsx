@@ -81,27 +81,43 @@ export default function Home() {
     </div>
     <SkillGroup></SkillGroup>
     <ProjectSection></ProjectSection>
-    <section id="education" className="relative min-h-screen flex flex-col justify-center bg-gradient-to-t from-indigo-200 overflow-hidden dark:from-slate-800 dark:to-slate-900">
-      <div className="w-full max-w-2xl mx-auto px-4 md:px-6 py-24">
+    <div
+      class="h-1/2 bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative pt-3 pb-12 px-2 mx-auto "
+    >
+      <div class="container m-auto px-6 text-gray-600 dark:text-white md:px-12 xl:px-6 w-full md:w-9/12 ">
+          <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
 
-        <h1 className="text-2xl font-bold text-white mb-4">Courses</h1>
+            <div class="md:7/12 lg:w-7/12">
+              <h2 class="text-2xl text-gray-900 dark:text-indigo-600 font-bold md:text-4xl">Software Engineer Internship</h2>
+              <p class="mt-6 text-gray-200 tracking-wider"> 
+              SEEDA is an Alberta-based company whose goal is to help companies plan and execute capital projects. 
+              They provide engineering and techanical services, and offer project planning, management, and support.
+              </p>
+              <p class="mt-4 text-gray-200 tracking-wider">
+              During my four-month internship, I gained invaluable experience in full-stack development while working on a sophisticated Worksite Management System using the MERN stack,
+               complemented by React Bootstrap for responsive design. I learned from my partners and colleagues how to integrate geolocation services, providing real-time location tracking for worksite management, which 
+               enhanced my understanding of location-based technologies. Reading and understanding code of Google Authentication enhanced my skills in secure user authentication processes, 
+               ensuring robust security within the app. The development of a real-time check-in and check-out system, along with the generation of QR codes for each worksite region, deepened 
+               my understanding of dynamic data handling and user interface interaction. This internship was a comprehensive learning journey that significantly improved my technical skills and 
+               provided practical insights into developing complex, feature-rich web applications.
+              </p>
+            
 
-        <div className="divide-y divide-slate-200">
-          {courses.map((course, index) => (
-            <Accordion key={index} title={course.title} id={`faqs-${index}`} active={false}>
-              {course.text}
-            </Accordion>
-          ))}
-        </div>
-
+            </div>
+            <div class=" md:5/12 lg:w-4/12">
+              <img class="h-auto max-w-full rounded-full" src="/seeda.png" alt="image" width="300" height="300"/>
+            </div>
+          </div>
       </div>
-    </section>
+
+    </div>
     <ContactForm/>
     
     
 
 
     {/*  */}
+
 
 
 
