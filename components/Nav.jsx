@@ -49,13 +49,13 @@ const Navbar = () => {
                     
                 </li>
             </ul>
-            <div className="flex justify-end">
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-                <FaGithub size={24}/>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-                <FaLinkedin size={24}/>
-            </a>
+            <div className="hidden md:flex justify-end gap-2 ">
+            <Link href="https://github.com/hanshhh" class="text-gray-400 hover:text-gray-500" target="_blank" rel="noopener noreferrer">
+                <Image src="/github.png" width={30} height={30}/>
+            </Link>
+            <Link href="https://www.linkedin.com/in/wenqi-zhan" class="text-gray-400 hover:text-gray-500" target="_blank" rel="noopener noreferrer">
+                <Image src="/linkedin.png" width={38} height={39}/>
+            </Link>
 
             </div>
             {/* <img

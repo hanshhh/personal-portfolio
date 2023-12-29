@@ -33,6 +33,10 @@ export default function Home() {
                 I'm an international student from Shanghai, China. Absolutely Love this City. So far have visited CNTower, Toronto Island, and Niagara Falls 👉.
                  Have met wonderful people here: KD, KS 🫶. 
                </p>
+               <Link
+          class="btn-grad btn-grad-sm w-[150px]"
+          href="#contact"
+          >Message</Link>
             </div>
             <div class=" md:5/12 lg:w-4/12">
               <img class="h-auto max-w-full rounded-lg" src="/profile.png" alt="image" loading="lazy" width="" height=""/>
@@ -55,10 +59,7 @@ export default function Home() {
         <p className="text-gray-300  text-xl md:text-2xl tracking-wide mb-4">Aside from my technical pursuits, I have a diverse array of hobbies that keep me balanced and energized. I enjoy watching soccer and NBA, although 
           I'm not a very good player. 😭 I'm good at playing badminton🏸 though, so always ready for a friendly match or a competitive game. 
           Playing the guitar🎸 offers me a creative outlet and a way to unwind after a day of coding and problem-solving.</p>
-        <a
-          class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit"
-          href="#contact"
-          >Contact Me</a>
+        
       </div> */}
     </div>
     <div class="py-16 bg-white dark:bg-slate-900">  
@@ -70,8 +71,8 @@ export default function Home() {
             <div class="md:7/12 lg:w-6/12">
               <h2 class="text-2xl text-gray-900 dark:text-white font-bold md:text-4xl">CS Specialist Program</h2>
               <p class="mt-6 text-gray-200">I am currently pursuing a Computer Science Specialist program as part of a Bachelor Of Science degree along with a minor in Mathematics & STATs in UofT, St. George Campus. Expected to graduate in summer 2025. My current GPA: 3.92/4.0.</p>
-              <p class="mt-4 text-gray-200">I actively participated in the Recognized Study Group Leadership Program, where I led a group of 4-8 CS/Math students to facilitate learning. </p>
-              <Link href="/education">View Courses & Transcript</Link>
+              <p class="mt-4 text-gray-200 pb-2">I actively participated in the Recognized Study Group Leadership Program, where I led a group of 4-8 CS/Math students to facilitate learning. </p>
+              <Link href="/education" className='btn-grad w-[300px]'>Courses & Transcript</Link>
             </div>
           </div>
       </div>
