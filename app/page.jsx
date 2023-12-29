@@ -5,6 +5,7 @@ import Modal from '@/components/Modal';
 import SkillGroup from '@/components/SkillGroup';
 import Link from 'next/link';
 import ProjectSection from '@/components/Projects';
+import ContactForm from '@/components/ContactForm';
 
 
 export default function Home() {
@@ -32,7 +33,7 @@ export default function Home() {
               </p>
               <p class="mt-4 text-gray-200 tracking-wider">
                 I'm an international student from Shanghai, China. Absolutely Love this City. So far have visited CNTower, Toronto Island, and Niagara Falls 👉.
-                 Have met wonderful people here: KD, KS 🫶. 
+                 Have met wonderful people here since 2021: KD, KS... 🫶. 
                </p>
                <Link
           class="btn-grad btn-grad-sm w-[150px]"
@@ -95,6 +96,7 @@ export default function Home() {
 
       </div>
     </section>
+    <ContactForm/>
     
     
 

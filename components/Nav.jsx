@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import Modal from "./Modal";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
@@ -13,6 +14,7 @@ const Navbar = () => {
     const openModal = () => {
         setOpen(true)
     }
+    const router = useRouter();
 
     // https://www.linkedin.com/pulse/implement-dark-mode-tailwindcss-nextjs13-app-5-simple-lucas-los-arcos/
     // Todo: later add mode toggle based on the tut
@@ -25,14 +27,14 @@ const Navbar = () => {
             <div class="container mx-auto py-5 flex items-center justify-between">
             <div class="flex items-center gap-2">
                 {/* <Image class="w-8" src="/logo.png" alt="" width={40} height={40}/> */}
-                <span class="text-2xl font-bold text-indigo-900 dark:text-white"
+                <span class="text-2xl font-bold text-indigo-900 dark:text-white cursor-pointer" onClick={()=> router.push('/')}
                 >Wenqi Zhan</span>
             </div>
             <ul
                 class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
             >
                 <li class="hover:text-gray-500">
-                <Link href="/">About me</Link>
+                <Link href="/">About</Link>
                 </li>
                 <li class="hover:text-gray-500">
                 <Link href="#education">Education</Link>

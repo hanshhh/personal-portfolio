@@ -45,7 +45,12 @@ export default function Modal({open, setOpen}) {
                         <input
                             class="p-2 w-full  ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
                             type="text"
-                            placeholder="Name Surname"
+                            placeholder="Name"
+                        />
+                        <input
+                            class="p-2 w-full  ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                            type="text"
+                            placeholder="phone"
                         />
                         <input
                             class="p-2 w-full  ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
