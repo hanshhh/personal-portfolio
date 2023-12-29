@@ -71,8 +71,8 @@ const Navbar = () => {
                 <div class="w-6 h-0.5 bg-black"></div>
                 <div class="w-6 h-0.5 bg-black"></div>
             </div> */}
-            <div className="space-y-1 md:hidden cursor-pointer z-20">
-                <FaBars width={80} onClick={() => setShowSide((showSide) => {return !showSide})}/>
+            <div className="space-y-1 md:hidden cursor-pointer z-20 text-white">
+                <FaBars onClick={() => setShowSide((showSide) => {return !showSide})} style={{color: "white"}}/>
 
             </div>
             
@@ -84,14 +84,28 @@ const Navbar = () => {
                 <a id="hLink" href="/">About me</a>
                 </li>
                 <li>
-                <a id="hLink" href="#education">Education</a>
+                <a id="hLink" href="#education" onClick={()=>setShowSide(false)}>Education</a>
                 </li>
                 <li>
-                <a id="hLink" href="#skill">Skills</a>
+                <a id="hLink" href="#skill" onClick={()=>setShowSide(false)}>Skills</a>
                 </li>
                 <li>
-                <a id="hLink" href="#experience">Experience</a>
+                <a id="hLink" href="#experience" onClick={()=>setShowSide(false)}>Experience</a>
                 </li>
+                <li>
+                <Link href="https://github.com/hanshhh" id="hLink" target="_blank" rel="noopener noreferrer">
+                    View Github
+                </Link>
+
+                </li>
+                <li>
+                <Link href="https://www.linkedin.com/in/wenqi-zhan" id="hLink" target="_blank" rel="noopener noreferrer">
+                    View Linkedin 
+                </Link>
+
+                </li>
+                
+               
 
                 <li>
                 <p onClick={openModal}>Contact</p>
