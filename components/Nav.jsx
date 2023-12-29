@@ -23,15 +23,15 @@ const Navbar = () => {
 
 
     return (
-        <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900 px-8">
+        <nav class="w-full fixed top-0 z-10 dark:bg-slate-900 px-8">
             <div class="container mx-auto py-5 flex items-center justify-between">
             <div class="flex items-center gap-2">
                 {/* <Image class="w-8" src="/logo.png" alt="" width={40} height={40}/> */}
-                <span class="text-2xl font-bold text-indigo-900 dark:text-white cursor-pointer" onClick={()=> router.push('/')}
+                <span class="text-2xl font-bold  dark:text-white cursor-pointer" onClick={()=> router.push('/')}
                 >Wenqi Zhan</span>
             </div>
             <ul
-                class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
+                class="hidden md:flex space-x-10  dark:text-gray-100 font-bold text-sm uppercase"
             >
                 <li class="hover:text-gray-500">
                 <Link href="/">About</Link>
