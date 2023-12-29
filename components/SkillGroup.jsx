@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function SkillGroup() {
     return (
-      <div className="bg-white dark:bg-slate-800 py-24 sm:py-32">
+      <div className="bg-white dark:bg-slate-800 py-24 sm:py-32" id="skill">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center leading-8 text-4xl font-bold text-indigo-600 pb-4">
             Tools & Technologies

@@ -41,7 +41,7 @@ function ContactForm() {
                         <span className="mb-1">Message</span>
                         <textarea rows="5" className="block w-full rounded-md focus:ring focus:ri focus:ri dark:bg-gray-800"></textarea>
                     </label>
-                    <button type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ri dark:bg-violet-400 dark:text-gray-900 focus:ri hover:ri">Submit</button>
+                    <button type="button" className="btn-grad grad-rev">Submit</button>
                 </form>
             </div>
         </section>

@@ -51,6 +51,11 @@ body {
   font-size: 16px;
 }
 
+.grad-rev {
+  background-image: linear-gradient(to left,  #1A2980  0%,  #26D0CE  40%, #1A2980 80%);
+
+}
+
 .btn-grad-sm {
   padding: 10px 20px;
 }

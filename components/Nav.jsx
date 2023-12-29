@@ -40,10 +40,10 @@ const Navbar = () => {
                 <Link href="#education">Education</Link>
                 </li>
                 <li class="hover:text-gray-500">
-                <Link href="#">Skills</Link>
+                <Link href="#skill">Skills</Link>
                 </li>
                 <li class="hover:text-gray-500">
-                <Link href="/dj">Experience</Link>
+                <Link href="#experience">Experience</Link>
                 </li>
                 
                 <li class="hover:text-gray-500 cursor-pointer">
@@ -81,16 +81,16 @@ const Navbar = () => {
                 className= {`${!showSide && 'hidden'} bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center`}
             >
                 <li>
-                <a id="hLink" href="#">About me</a>
+                <a id="hLink" href="/">About me</a>
                 </li>
                 <li>
-                <a id="hLink" href="#">Education</a>
+                <a id="hLink" href="#education">Education</a>
                 </li>
                 <li>
-                <a id="hLink" href="#">Skills</a>
+                <a id="hLink" href="#skill">Skills</a>
                 </li>
                 <li>
-                <a id="hLink" href="#">Experience</a>
+                <a id="hLink" href="#experience">Experience</a>
                 </li>
 
                 <li>
