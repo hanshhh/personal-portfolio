@@ -1,9 +1,11 @@
 import technologies from "@/data/technologies";
 import Image from "next/image";
+import { MotionLeft } from "./MotionSection";
 
 export default function SkillGroup() {
     return (
       <div className="bg-slate-800 py-24 sm:py-32" id="skill">
+        <MotionLeft>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center leading-8 text-4xl font-bold text-indigo-600 pb-4">
             Tools & Technologies
@@ -22,6 +24,9 @@ export default function SkillGroup() {
             })}
           </div>
         </div>
+
+        </MotionLeft>
+
       </div>
     )
   }

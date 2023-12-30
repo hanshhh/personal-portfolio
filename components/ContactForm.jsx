@@ -1,4 +1,26 @@
+"use client";
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+
+
 function ContactForm() {
+    const [showSuccess, setShowSuccess] = useState(false);
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_uy811ha', 'template_1up4fyh', form.current, '7JLVftSoSodL50lKc')
+          .then((result) => {
+              form.current.reset();
+              setShowSuccess(true);
+              console.log(result.text);
+          }, (error) => {
+              form.current.reset();
+              console.log(error.text);
+          });
+      }; 
+
+
     return (
         <section className="py-6 bg-slate-900 text-gray-50" id="contact">
             <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
@@ -28,20 +50,22 @@ function ContactForm() {
                         </p>
                     </div>
                 </div>
-                <form novalidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+                <form className="flex flex-col py-6 space-y-6 md:py-0 md:px-6" ref={form} onSubmit={sendEmail}>
                     <label className="block">
                         <span className="mb-1">Full name</span>
-                        <input type="text" placeholder="Name" className="block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri bg-gray-800" />
+                        <input type="text" placeholder="Name" className="block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri bg-gray-800" name="username" required/>
                     </label>
                     <label className="block">
                         <span className="mb-1">Email address</span>
-                        <input type="email" placeholder="Email.." className="block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri bg-gray-800" />
+                        <input type="email" placeholder="Email.." className="block w-full rounded-md shadow-sm focus:ring focus:ri focus:ri bg-gray-800" name="email" required/>
                     </label>
                     <label className="block">
                         <span className="mb-1">Message</span>
-                        <textarea rows="5" className="block w-full rounded-md focus:ring focus:ri focus:ri bg-gray-800"></textarea>
+                        <textarea rows="5" className="block w-full rounded-md focus:ring focus:ri focus:ri bg-gray-800" name="message" required></textarea>
                     </label>
-                    <button type="button" className="btn-grad grad-rev">Submit</button>
+                    {showSuccess && <p class="text-green-500 text-xs italic text-center">Message Sent!</p>}
+                    <button type="submit" className="btn-grad grad-rev">Submit</button>
+                    
                 </form>
             </div>
         </section>
