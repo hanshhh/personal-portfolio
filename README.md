@@ -1,4 +1,6 @@
-# Personal Portfolio Website Version 0
+# Personal Portfolio Website Version 1(Will add animation later)
+
+[View My Portfolio](https://wenqizhan-portfolio.vercel.app/)
 
 ## Still in Progress. Will be ready soon.
 
