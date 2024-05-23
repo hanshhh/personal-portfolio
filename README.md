@@ -1,8 +1,8 @@
-# Personal Portfolio Website Version 1(Will add animation later)
+# Personal Portfolio Website 
 
 [View My Portfolio](https://wenqizhan-portfolio.vercel.app/)
 
-## Still in Progress. Will be ready soon.
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
